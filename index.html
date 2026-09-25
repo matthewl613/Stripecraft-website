@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/png" href="/favicon.png?v=2">
+<title>Stripecraft · Matt Loo</title>
+<meta name="description" content="Matt Loo connects recruitment companies with hiring companies showing contract, funding, or job-opening signals — before the search turns into vendor noise." />
+<style>
+  :root{
+    /* ---- KNOBS (filled from interview) ---- */
+    --accent:#5a3320;--accent-soft:#7a4a30;--bg:#fbfaf6;--bg-soft:#f3ede2;
+    /* ---- LOCKED editorial DNA — never edit ---- */
+    --ink:#14161a;--ink-soft:#2a2d33;--sub:#5a5e66;--rule:#e4e0d3;--rule-soft:#efebdd;
+    --serif:"Charter","Iowan Old Style","Baskerville","Georgia","Times New Roman",serif;
+    --mono:"JetBrains Mono","SF Mono","Menlo","Consolas",monospace;
+  }
+  *{box-sizing:border-box} html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.62;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  .wrap{max-width:640px;margin:0 auto;padding:0 24px}
+  .label{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--sub)}
+  header{border-bottom:1px solid var(--rule)}
+  .topbar{display:flex;align-items:baseline;justify-content:space-between;padding:22px 0;gap:16px}
+  .brand{font-family:var(--mono);font-size:15px;letter-spacing:.04em}
+  .brand b{color:var(--accent);font-weight:600}
+  nav a{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--sub);text-decoration:none;margin-left:18px}
+  nav a:hover{color:var(--accent)}
+  .hero{padding:72px 0 56px}
+  .hero h1{font-weight:500;font-size:31px;line-height:1.34;letter-spacing:-.01em;margin:0 0 22px}
+  .hero h1 .em{color:var(--accent)}
+  .hero .meta{font-family:var(--mono);font-size:13px;color:var(--sub)}
+  .view-work{display:inline-block;margin-top:8px;font-family:var(--mono);font-size:12px;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-soft)}
+  .view-work:hover{color:var(--accent-soft)}
+  section{padding:46px 0;border-top:1px solid var(--rule-soft)}
+  .sec-label{display:block;margin-bottom:26px}
+  .feed{list-style:none;margin:0;padding:0}
+  .feed li{display:flex;gap:14px;align-items:baseline;padding:11px 0;border-bottom:1px solid var(--rule-soft)}
+  .feed li:last-child{border-bottom:0}
+  .feed .dot{color:var(--accent);font-family:var(--mono);font-size:12px;flex:none}
+  .feed .txt{font-size:16.5px;color:var(--ink-soft)}
+  .feed .src{color:var(--sub);font-style:italic;font-size:15px;margin-top:16px}
+  .work{margin:0;padding:0;list-style:none}
+  .work li{padding:14px 0;border-bottom:1px solid var(--rule-soft)}
+  .work li:last-child{border-bottom:0}
+  .work .amt{font-family:var(--mono);color:var(--accent);font-size:14px}
+  .work .desc{display:block;margin-top:3px;color:var(--ink-soft)}
+  .caption{color:var(--sub);font-style:italic;margin-top:20px;font-size:16px}
+  .essays{margin:0;padding:0;list-style:none}
+  .essays li{padding:9px 0}
+  .essays a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule)}
+  .essays a:hover{color:var(--accent);border-color:var(--accent)}
+  .cta{background:var(--bg-soft);border-top:1px solid var(--rule)}
+  .cta-inner{padding:56px 0 64px}
+  .cta h2{font-weight:500;font-size:24px;margin:14px 0 10px}
+  .scarcity{font-family:var(--mono);font-size:13px;color:var(--accent-soft);margin:0 0 24px}
+  .cta p{color:var(--ink-soft);font-size:17px;max-width:52ch}
+  .book{display:inline-block;margin-top:10px;font-family:var(--mono);font-size:14px;letter-spacing:.02em;color:#fff;background:var(--accent);padding:13px 22px;text-decoration:none;border-radius:2px}
+  .book:hover{background:var(--accent-soft)}
+  .embed-note{font-family:var(--mono);font-size:11px;color:var(--sub);margin:30px 0 10px;letter-spacing:.04em}
+  #cal-inline{width:100%;min-height:520px;border:1px solid var(--rule);border-radius:3px;background:var(--bg)}
+  footer{border-top:1px solid var(--rule)}
+  .foot{padding:26px 0 40px;font-family:var(--mono);font-size:12px;color:var(--sub);display:flex;justify-content:space-between}
+  .foot a{color:var(--sub);text-decoration:none}
+  @media (max-width:560px){.hero h1{font-size:26px}nav a:first-child{margin-left:0}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap topbar">
+    <span class="brand"><strong>Stripecraft</strong></span>
+    <nav><a href="#work">Work</a><a href="#writing">Writing</a><a href="#contact">Contact</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <div class="hero">
+    <h1>Matt Loo routes <span class="em">talent, capital, and mandates</span> between operators who need to find each other.</h1>
+    <p class="meta"><em>Selective mandates across capital, growth, and strategic introductions.</em></p>
+    <a class="view-work" href="https://app.notion.com/p/Stripecraft-Case-Studies-5f413e3cd9eb4b12858640399f8bbf54" target="_blank" rel="noopener">View All Work &rarr;</a>
+  </div>
+  <section>
+    <span class="label sec-label">Live signal</span>
+    <ul class="feed">
+      <li><span class="dot">→</span><span class="txt">U.S. employers reported 7.4 million job openings in June 2026, with 5.3 million hires.</span></li>
+      <li><span class="dot">→</span><span class="txt">General Dynamics Information Technology received a $4.86M DHS task order for SAP Special Projects beginning August 1, 2026.</span></li>
+      <li><span class="dot">→</span><span class="txt">Aurelius Systems announced a $40M Series A on August 5, 2026 to scale technical development, operations, and production.</span></li>
+      <li><span class="dot">→</span><span class="txt">WidePoint Integrated Solutions has a $2.29M DHS managed-wireless task order beginning August 25, 2026.</span></li>
+    </ul>
+    <p class="feed src">Sourced from U.S. Bureau of Labor Statistics hiring data, USAspending.gov contract awards, and public funding and job-market reporting.</p>
+  </section>
+  <section id="work">
+    <span class="label sec-label">Selected work</span>
+    <ul class="work">
+      <li><span class="amt">+$105K in 90 Days</span><span class="desc">Connect Group — Scaling AI Talent Placements</span></li>
+      <li><span class="amt">22 placements, 55 days</span><span class="desc">Elate Staffing — Full-Cycle Recruitment Placements</span></li>
+      <li><span class="amt">+$100K, 6 months</span><span class="desc">Crawford Thomas Recruiting — Manufacturing Recruitment</span></li>
+    </ul>
+    <p class="caption">Selected outcomes delivered in partnership with myoProcess.</p>
+  </section>
+  <section id="writing">
+    <span class="label sec-label">Writing</span>
+    <ul class="essays">
+      <li><a href="thesis-1.html">The best recruiter is usually already inside the lane</a></li>
+      <li><a href="thesis-2.html">A hiring signal is not the same as hiring intent</a></li>
+      <li><a href="thesis-3.html">More recruiters rarely fixes a hard search</a></li>
+    </ul>
+  </section>
+</main>
+<section class="cta" id="contact">
+  <div class="wrap cta-inner">
+    <span class="label">Private help with Matt</span>
+    <h2>Tell me where you&rsquo;re at and what you&rsquo;re trying to get to.</h2>
+    <p class="scarcity">Currently accepting 2 new counterparties this quarter.</p>
+    <p>If you're a recruitment company with a clear candidate lane, or a hiring company with a real search to fill, message me. I'll see whether there's a fit.</p>
+    <a class="book" href="https://cal.com/matthew-loo/intro-call" target="_blank" rel="noopener">Book a 20-minute call &rarr;</a>
+    <div id="cal-inline"></div>
+    <script type="text/javascript">
+      (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+      Cal("init", { origin: "https://cal.com" });
+      Cal("inline", { elementOrSelector: "#cal-inline", calLink: "matthew-loo/intro-call", config: { layout: "month_view" } });
+    </script>
+  </div>
+</section>
+<footer>
+  <div class="wrap foot"><span>&copy; 2026 Matt Loo</span><a href="mailto:matt@stripecraft.io">matt@stripecraft.io</a></div>
+</footer>
+</body>
+</html>
